@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b061175;
+  padding: 15px 30px;
+}
+.nav-links {
+  display: flex;       /* Ativa o Flexbox */
+  list-style: none;    /* Remove as bolinhas pretas padrão da lista */
+  padding: 0;
+  margin: 0;
+  gap: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* 2. Garante que os links fiquem bem formatados */
+.nav-links li {
+  display: inline-block; /* Reforço para o alinhamento */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove o sublinhado azul padrão */
+  color: white;          /* Cor do texto (ajuste conforme seu design) */
+  font-size: 16px;
+}
+.logo img {
+  height: 60px;      /* Define uma altura fixa para a imagem */
+  width: auto;       /* Mantém a proporção largura/altura perfeita */
+  display: block;    /* Remove espaços extras abaixo da imagem */
+}
