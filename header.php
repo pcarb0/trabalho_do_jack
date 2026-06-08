@@ -7,8 +7,8 @@
     
     <ul class="nav-links">
       <li><a href="home.php">Filmes</a></li>
-      <li><a href="user_reviews">Minhas Reviews</a></li>
-      <li><a href="user_alugueis">Meus alugueis</a></li>
+      <li><a href="reviews.php">Minhas Reviews</a></li>
+      <li><a href="alugueis.php">Meus alugueis</a></li>
       <li><a href="user_account">Conta</a></li>
     </ul>
   </nav>

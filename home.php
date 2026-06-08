@@ -1,7 +1,7 @@
 <?php
 // ─── Conexão com o banco de dados ────────────────────────────────────────────
 try {
-    $conn = new PDO("mysql:host=127.0.0.1;dbname=trabalho;charset=utf8", "root", "1234");
+    $conn = new PDO("mysql:host=127.0.0.1;dbname=trabalho;charset=utf8", "root", "");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("Erro de conexão: " . $e->getMessage());

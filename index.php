@@ -1,14 +1,14 @@
 <?php
 $host = "localhost";
-$username = "root";
-$password = "1234";
-$dbname = "trabalho";
+$username = "app_user";
+$password = "";
+$db_name = "trabalho";
 $port = "3306";
 
 
 
 try {
-    $conn = new PDO("mysql:host=127.0.0.1;dbname=trabalho;charset=utf8", "root", "1234");
+    $conn = new PDO("mysql:host=$host;dbname=$db_name;charset=utf8", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     echo "Erro de conexão: " . $e->getMessage() . "<br>";
