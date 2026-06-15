@@ -1,0 +1,83 @@
+/* Estilos específicos para a página de Reviews */
+
+.nota-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(135deg, var(--purple), var(--purple-lt));
+    color: #fff;
+    font-weight: 700;
+    font-size: .82rem;
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+
+.review-card {
+    /* Preto com 75% de opacidade para cobrir bem as nuvens do fundo */
+    background-color: rgba(13, 11, 26, 0.75) !important; 
+    background: rgba(13, 11, 26, 0.75) !important;
+    
+    /* Aplica o efeito de vidro fosco para separar o texto do fundo */
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    
+    /* Garante que a borda apareça */
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 14px !important;
+    padding: 18px 20px !important;
+    transition: transform .2s, box-shadow .2s;
+}
+
+/* Garante que no hover ele continue com o fundo visível */
+.review-card:hover {
+    transform: translateY(-3px);
+    background-color: rgba(13, 11, 26, 0.85) !important;
+    background: rgba(13, 11, 26, 0.85) !important;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.6) !important;
+}
+
+.review-meta {
+    font-size: .78rem;
+    color: var(--text-muted);
+}
+
+.review-conteudo {
+    color: var(--text);
+    font-size: .92rem;
+    margin-top: 8px;
+    line-height: 1.55;
+}
+
+.star-nota { 
+    color: #f0c040; 
+}
+
+
+.btn-confirm-delete {
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+    padding: 10px 24px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.form-select {
+    background-color: #0d0b1a !important; 
+    color: #ffffff !important;            
+}
+
+
+.form-select option {
+    background-color: #0d0b1a !important; 
+    color: #ffffff !important;
+    padding: 10px;
+}
+
+
+.form-select:focus {
+    background-color: #0d0b1a !important;
+    color: #ffffff !important;
+    border-color: var(--purple);
+    box-shadow: 0 0 0 0.25rem rgba(130, 49, 211, 0.25); 
+}
